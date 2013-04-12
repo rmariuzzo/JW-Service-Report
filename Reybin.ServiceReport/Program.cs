@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
+using Reybin.ServiceReport.Service;
 
 namespace Reybin.ServiceReport
 {
@@ -13,6 +14,9 @@ namespace Reybin.ServiceReport
         [STAThread]
         static void Main()
         {
+            var admin = new AppService();
+            admin.Init();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
