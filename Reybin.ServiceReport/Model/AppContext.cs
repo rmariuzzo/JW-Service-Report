@@ -10,6 +10,9 @@ namespace Reybin.ServiceReport.Model
 {
     public class AppContext : DbContext
     {
+
+        public DbSet<User> Users { get; set; }
+
         public AppContext()
             : base("Data Source=" + App.DataSourcePath + ";")
         {

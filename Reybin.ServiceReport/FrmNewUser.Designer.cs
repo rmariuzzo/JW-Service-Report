@@ -1,6 +1,6 @@
 ﻿namespace Reybin.ServiceReport
 {
-    partial class FrmNew_User
+    partial class FrmNewUser
     {
         /// <summary>
         /// Variable del diseñador requerida.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.TxtUsername = new System.Windows.Forms.TextBox();
-            this.create = new System.Windows.Forms.Button();
+            this.BtnCreateUser = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,15 +44,15 @@
             this.TxtUsername.Size = new System.Drawing.Size(100, 20);
             this.TxtUsername.TabIndex = 0;
             // 
-            // create
+            // BtnCreateUser
             // 
-            this.create.Location = new System.Drawing.Point(331, 211);
-            this.create.Name = "create";
-            this.create.Size = new System.Drawing.Size(75, 23);
-            this.create.TabIndex = 2;
-            this.create.Text = "Crear";
-            this.create.UseVisualStyleBackColor = true;
-            this.create.Click += new System.EventHandler(this.create_Click);
+            this.BtnCreateUser.Location = new System.Drawing.Point(331, 211);
+            this.BtnCreateUser.Name = "BtnCreateUser";
+            this.BtnCreateUser.Size = new System.Drawing.Size(75, 23);
+            this.BtnCreateUser.TabIndex = 2;
+            this.BtnCreateUser.Text = "Crear";
+            this.BtnCreateUser.UseVisualStyleBackColor = true;
+            this.BtnCreateUser.Click += new System.EventHandler(this.BtnCreateUser_Click);
             // 
             // label1
             // 
@@ -98,19 +98,19 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Acontinuacion cree un usuario para poder guardar su informe de servicio.";
             // 
-            // FrmNew_User
+            // FrmNewUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(450, 262);
-            this.Controls.Add(this.create);
+            this.Controls.Add(this.BtnCreateUser);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.TxtPassword);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TxtUsername);
-            this.Name = "FrmNew_User";
+            this.Name = "FrmNewUser";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -119,7 +119,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button create;
+        private System.Windows.Forms.Button BtnCreateUser;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

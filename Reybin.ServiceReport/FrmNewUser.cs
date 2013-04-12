@@ -6,19 +6,21 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Reybin.ServiceReport.Service;
 
 namespace Reybin.ServiceReport
 {
-    public partial class FrmNew_User : Form
+    public partial class FrmNewUser : Form
     {
-        public FrmNew_User()
+        public FrmNewUser()
         {
             InitializeComponent();
            
         }
 
-        private void create_Click(object sender, EventArgs e)
+        private void BtnCreateUser_Click(object sender, EventArgs e)
         {
+            // Validate input.
 
             if (String.IsNullOrEmpty(TxtUsername.Text)) 
             {
@@ -28,6 +30,10 @@ namespace Reybin.ServiceReport
             {
                 MessageBox.Show("Escriba un contraseña valida");
             }
+
+            // Crete user.
+            var service = new UserService();
+            service.Create(TxtUsername.Text, TxtPassword.Text);
         }
         
         
