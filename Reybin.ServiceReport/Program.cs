@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 using Reybin.ServiceReport.Service;
+using Reybin.ServiceReport.Resource;
 
 namespace Reybin.ServiceReport
 {
@@ -14,6 +15,8 @@ namespace Reybin.ServiceReport
         [STAThread]
         static void Main()
         {
+            AppDomain.CurrentDomain.SetData("DataDirectory", App.AppDataDirPath);
+
             var admin = new AppService();
             admin.Init();
 

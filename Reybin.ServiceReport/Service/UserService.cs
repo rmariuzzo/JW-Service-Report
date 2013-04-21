@@ -20,7 +20,8 @@ namespace Reybin.ServiceReport.Service
         {
             using (var ctx = new AppContext())
             {
-                ctx.Users.Add(new User { Username = username, Password = password });
+                ctx.Users.Add(new User { Id = 123123123, Username = username, Password = password });
+                ctx.SaveChanges();
             }
         }
     }
